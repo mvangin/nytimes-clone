@@ -1,3 +1,179 @@
-body {
-    color: red;
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: .8rem;
+    border-bottom: 1px solid rgb(187, 185, 185);
 }
+
+.nav-left {
+    display: flex;
+    flex-basis: 230px;
+    justify-content: space-around;
+}
+
+.nav-left span a {
+    font-weight: bolder;
+}
+
+.nav-center img{
+    width: 200px;
+    height: auto;
+}
+
+.nav-right {
+    display: flex;
+    flex-basis: 250px;
+    justify-content: flex-end;
+}
+
+nav button {
+    background: rgb(86, 123, 149);
+    color: white;
+    border: 1px solid rgb(86, 123, 149);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+header {
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.main-content {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.article-title { 
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+
+header img {
+    width:950px;;
+}
+
+header figcaption {
+    font-style: normal;
+    opacity: .7;
+    width: 950px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.author-credit {
+    opacity: .7;
+    font-size: .9rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.article-author {
+    margin-top: 30px;
+}
+
+.sharing-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.share-item {
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.date {
+    opacity: .8;
+    font-size: .8rem;
+}
+
+.main-text {
+    line-height: 2rem;
+}
+
+br {
+    margin: 20px;
+}
+
+.suggestion-container {
+    max-width: 250px;
+    margin-right: 50px;
+    font-size:.8rem;
+    float: right;
+}
+
+.suggestion-title {
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.suggestion-item {
+  font-weight: normal;
+  padding-top: 15px;
+  clear: both;
+}
+
+.suggestion-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.suggestion-caption {
+    display: flex;
+    align-items: center;
+    margin-left: 115px;
+    height: 100px;
+    
+}
+
+@media (max-width: 1200px) {
+    .suggestion-container {
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+    header img {
+        width: 100%;
+    }
+    .article-title {
+        font-size: 1.5rem;
+    }
+}
+
